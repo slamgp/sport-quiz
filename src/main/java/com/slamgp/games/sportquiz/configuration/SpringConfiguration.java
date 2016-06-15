@@ -9,6 +9,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+import com.slamgp.games.sportquiz.model.Prototype;
+import com.slamgp.games.sportquiz.service.Router;
+
 @Configuration
 @ComponentScan("com.slamgp.games.sportquiz")
 @EnableWebMvc
@@ -26,5 +29,15 @@ public class SpringConfiguration extends WebMvcConfigurerAdapter {
         resolver.setViewClass(JstlView.class);
 
         return resolver;
+    }
+
+    @Bean
+    public Router message() {
+        return new Router();
+    }
+
+    @Bean
+    public Prototype prototype() {
+        return new Prototype();
     }
 }
