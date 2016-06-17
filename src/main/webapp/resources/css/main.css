@@ -1,0 +1,9 @@
+.mainDiv {      
+                    top: 30px;
+                    position:relative;
+                    width: 80%;
+                    height: 80%;
+                    border: solid 3px #ffffff; 
+                    margin: 0 10% 0 10%;
+                    padding: 1%;
+        }
