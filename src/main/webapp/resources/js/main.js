@@ -17,4 +17,6 @@ $("#btnDivContent").bind('click', function() {divContentRequest()});
 
 $(document).ready(function(){   
     alert("alert");
+    var player = $('#player').get(0);
+    player.play();
 });

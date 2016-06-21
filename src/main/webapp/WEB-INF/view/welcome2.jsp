@@ -8,6 +8,9 @@
         <link rel="stylesheet" type="text/css" href="resources/css/main.css"/>
     </head>
     <body>
+        <audio preload="auto" id="player"> 
+             <source src="resources/music/fon.mp3"/>
+        </audio>
         <div class = "mainDiv" id= "mainContext">
             WELCOMEEEEEEEEEE2222!
             <p>
