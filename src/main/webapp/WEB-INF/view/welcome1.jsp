@@ -17,7 +17,7 @@
             ${name}
             </p>
         </div>
-        <button id = "btnDivContent"> Request </button>
+        <button id = "btnDivContentPost"> Request </button>
     </body>
     <script type="text/javascript" src="resources/js/jquery-2.2.4.js"></script>
     <script type="text/javascript" src="resources/js/main.js"></script>
