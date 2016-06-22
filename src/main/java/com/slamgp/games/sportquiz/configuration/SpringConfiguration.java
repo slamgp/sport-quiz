@@ -9,6 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+import com.slamgp.games.sportquiz.model.GamesInfo;
 import com.slamgp.games.sportquiz.model.Prototype;
 import com.slamgp.games.sportquiz.service.Router;
 
@@ -39,5 +40,11 @@ public class SpringConfiguration extends WebMvcConfigurerAdapter {
     @Bean
     public Prototype prototype() {
         return new Prototype();
+    }
+    
+
+    @Bean
+    public GamesInfo gamesInfo() {
+        return new GamesInfo();
     }
 }
