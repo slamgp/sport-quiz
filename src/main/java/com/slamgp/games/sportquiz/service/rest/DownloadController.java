@@ -21,7 +21,7 @@ public class DownloadController {
     @RequestMapping(method = RequestMethod.GET)
     public void  getFile(HttpServletResponse response) {
        File file = new File("src/main/webapp/resources/music/fon.jpg");
-       String mimeType = "application/octet-stream";
+       String mimeType = "image/jpeg";
        if(file.exists()) {
            transferFile(response, file, mimeType);
        } else  {
