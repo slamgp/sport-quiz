@@ -22,13 +22,17 @@ public class DownloadController {
        String  filePath = "/resources/music/fon.mp3";
        try {
            ServletContext context = request.getServletContext();
+
            String appPath = context.getRealPath("");
            String fullPath =  appPath + filePath;
            File file = new File(fullPath);
+
            FileInputStream inputStream = new FileInputStream(file);
+
            byte[] targetArray = new byte[inputStream.available()];
            inputStream.read(targetArray);
            response.getOutputStream().write(targetArray);
+
            inputStream.close();
        } catch (IOException e) {
            e.printStackTrace();
