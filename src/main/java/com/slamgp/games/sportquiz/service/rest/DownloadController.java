@@ -3,7 +3,6 @@ package com.slamgp.games.sportquiz.service.rest;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
@@ -32,7 +31,6 @@ public class DownloadController {
            byte[] targetArray = new byte[inputStream.available()];
            inputStream.read(targetArray);
            response.getOutputStream().write(targetArray);
-
            inputStream.close();
        } catch (IOException e) {
            e.printStackTrace();
